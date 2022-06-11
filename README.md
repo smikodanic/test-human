@@ -35,9 +35,17 @@ $ npm run serve
 
 
 ## Built-in Endpoints
+PUBLIC
 - **GET /api**  --API general info
-- **POST /api/register**  --register new user
-- **POST /api/login**  --user login which returns JWT token
+- **POST /api/register**  --register new user, reoles: admin, customer
+- **POST /api/login**  --user login which returns JWT token, use this token as JWT Auth. *Authorization: JWT aswa...*
 - **GET /api/loggedinfo**  --logged user info
+
+CUSTOMER
 - **GET /api/customer/test**  --customer endpoint test
+- **POST /api/customer/articles/addnew**  --customer endpoint to add new article (JWT Auth)
+- **DELETE /api/customer/articles/:id**  --customer endpoint to delete an article found by _id (JWT Auth) -- http://127.0.0.1:9988/api/customer/articles/62a45d1d7fe45b2f94161bfa
+- **GET /api/customer/articles/:id**  --customer endpoint to get the article found by _id (JWT Auth)
+
+ADMIN
 - **GET /api/admin/test**  --admin endpoint test

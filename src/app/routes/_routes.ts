@@ -61,6 +61,8 @@ class Routes {
 
     // customer
     router.post('/api/customer/articles/addnew', this.authCheckUsers(), articles.addnew);
+    router.delete('/api/customer/articles/:_id', this.authCheckUsers(), articles.del);
+    router.get('/api/customer/articles/:_id', this.authCheckUsers(), articles.getone);
 
     // admin
     router.get('/api/admin/test', this.authCheckUsers(), adminTest);
