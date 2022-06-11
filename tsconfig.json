@@ -1,0 +1,22 @@
+{
+  "compileOnSave": false,
+  "module": "commonjs",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    // "allowSyntheticDefaultImports": true,
+    "target": "es6",
+    "types": ["node"],
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2017"
+    ]
+  }
+}

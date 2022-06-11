@@ -1,0 +1,57 @@
+{
+  "name": "supermean-api-ts",
+  "version": "1.0.0",
+  "author": "Sasa Mikodanic",
+  "license": "MIT",
+  "title": "SuperMEAN API (typescript)",
+  "description": "SuperMEAN-API is API framework in NodeJS, Express and MongoDB by using typescript and webpack.",
+  "scripts": {
+    "build:development": "NODE_ENV=development webpack --config webpack-build.config.js",
+    "build:stage": "NODE_ENV=stage webpack --config webpack-build.config.js",
+    "build:production": "NODE_ENV=production webpack --config webpack-build.config.js",
+    "dev": "NODE_ENV=development webpack --config webpack.config.js",
+    "dev-verbose": "webpack --config webpack.config.js --display-error-details",
+    "serve": "nodemon ./dist/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:smikodanic/supermean-api-ts.git"
+  },
+  "keywords": [
+    "supermean",
+    "typescript",
+    "api"
+  ],
+  "homepage": "https://bitbucket.org/rxwebdevelop/telegram_api#readme",
+  "devDependencies": {
+    "@types/express": "^4.16.0",
+    "@types/node": "^10.9.4",
+    "@types/bluebird": "^3.5.24",
+    "@types/ejs": "^2.6.0",
+    "@types/fast-json-patch": "^1.1.5",
+    "@types/moment": "^2.13.0",
+    "@types/mongoose": "^5.2.9",
+    "@types/passport": "^0.4.6",
+    "@types/passport-jwt": "^3.0.1",
+    "@types/request-ip": "0.0.33",
+    "clean-webpack-plugin": "^0.1.19",
+    "ts-loader": "^4.5.0",
+    "typescript": "^3.0.3",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "chalk": "^2.4.1",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "fast-json-patch": "^2.0.7",
+    "moment": "^2.22.2",
+    "mongoose": "^5.2.8",
+    "morgan": "^1.9.0",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "request-ip": "^2.1.1",
+    "url-slug": "^3.0.4"
+  }
+}

@@ -1,0 +1,12 @@
+node_modules
+dist
+
+# Elasticbeanstalk files
+.elasticbeanstalk/*
+
+# SASS cache files
+.gulp-scss-cache/*
+.sass-cache/*
+
+#tmp files
+server/tmp/*
